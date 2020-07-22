@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Database_Project.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Pharma Health Services</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+     <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+  
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+
+    <style>
+        .row {
+          display: flex;
+        }
+
+        .column {
+          flex: 50%;
+        }
+    </style>
+
+
+
+    <style>
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 8px 25px;
+        text-decoration: none;
+    }
+    ul li a:hover{
+    }
+    ul li ul.dropdown{
+        min-width: 150%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+
+
+</style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+   
+    <form id="form1" runat="server" novalidate>
+
+        <header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+				<a class="navbar-brand" href="index.aspx"><img src="images/logo.png" alt="image"></a>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul id="bar" runat="server" class="navbar-nav">
+                        <li style="padding-right:2px"><asp:Button ID="homeTab" class="nav-link" runat="server" Text="Home" OnClick="HomeTabClick" /></li>
+                        <li style="padding-right:2px"><asp:Button ID="aboutUSTab" class="nav-link" runat="server" Text="About US" OnClick="AboutUsTabClick" /></li>
+                        <li style="padding-right:2px"><asp:Button ID="servicesTab" class="nav-link" runat="server" Text="Services" OnClick="ServicesTabClick"/>
+                        <ul class="dropdown nav-link">
+
+                                <li><asp:Button ID="medicineTab" class="nav-link" runat="server" Text="Medicine" OnClick="medicineTab_Click" /></li>
+                                <li><asp:Button ID="doctorHireTab" class="nav-link" runat="server" Text="Doctor" OnClick="doctorHireTab_Click" /></li>
+                                    
+                            </ul>
+                        </li>
+                        <li style="padding-right:2px"><asp:Button ID="galleryTab" class="nav-link" runat="server" Text="Gallery" OnClick="GalleryTabClick" /></li>
+                        <li style="padding-right:2px"><asp:Button ID="customerReviewsTab" class="nav-link" runat="server" Text="Customer Reviews" OnClick="CustomerReviewsTabClick" /></li>
+                        <li style="padding-right:2px"><asp:Button ID="contactTab" class="nav-link" runat="server" Text="Contact" OnClick="ContactTabClick" /></li>
+                        
+                        <li style="padding-right:2px"><asp:Button ID="loginTab" class="nav-link" runat="server" Text="Login" OnClick="LoginTabClick" /></li>
+                        
+                        
+                        
+                        
+                        <li style="padding-right:2px"><asp:Button ID="pharmacyTab" class="nav-link" runat="server" Text="My Account" OnClick="PharmacyTabClick" /></li>
+                        
+
+                        <li style="padding-right:2px"><asp:Button ID="doctorTab" class="nav-link" runat="server" Text="My Account" OnClick="DoctorTabClick" /></li>
+                        
+                        <li style="padding-right:2px"><asp:Button ID="logOutButton" class="nav-link" runat="server" Text="Log Out" OnClick="LogOutTabClick" /></li>
+                        
+                        <li style="padding-right:2px"><asp:Button ID="test_cart" class="nav-link" runat="server" Text="My Cart" OnClick="cartTabClick"/></li>
+                        
+                        
+                    </ul>
+					
+                    
+                </div>
+            </div>
+        </nav>
+	</header>
+
+	<!-- End header -->
+	
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <div class="subscribe-box">
+
+		
+
+		<div class="container">
+			<div class="row">
+				  
+				<div class="col-lg-12">
+					
+					<div class="subscribe-inner text-center clearfix">
+						<h2>Subscribe</h2>
+						<p>PHS don't spam. We only reach out to you when a promotion tailored to your interest comes up!</p>
+						<div class="form-group">
+                            <asp:TextBox ID="emailAddress" placeholder="Email Address" runat="server" CssClass="form-control-1"></asp:TextBox>
+						</div>
+						<div class="form-group">
+							
+                            <div class="form-group">
+                                <asp:Button class="new-btn-d br-2" ID="submitButton" runat="server" Text="Submit" OnClick="subscribeFunction" />
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+                
+                
+    <footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Pharma Health Services</a> Project By : Raffay Sajjad</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+
+
+    </form>
+
+    
+</body>
+
+    <a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script> 
+	<script src="js/slider-index.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+	<script src="js/isotope.min.js"></script>	
+	<script src="js/images-loded.min.js"></script>	
+    <script src="js/custom.js"></script>
+
+</html>
