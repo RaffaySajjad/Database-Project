@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{646A041B-AB45-4C35-A4E6-EC7C1DA3CBCF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Database Project/Web.config">
+    <Files>
+      <File FileName="Database Project/Web.config" Line="8" Column="81" />
+      <File FileName="Database Project/ThankYou.aspx" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Database Project" expanded="True">
+            <Node name="Database Project" expanded="True">
+              <Node name="Web.config" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Database_220Project PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
